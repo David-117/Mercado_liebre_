@@ -1,0 +1,332 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root {
+    --texto: 12px;
+    --precios: 18px;
+    --descuentos: 16px;
+    --descripciones:16px;
+    --titulares: 24px;
+    --fuente: 'Roboto';
+    --gris-fuerte:#666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+    --color-amarillo:#EAC926;
+    --azul-fuerte:#03264C;
+    --azul-celeste:#1259c3;
+}
+header{
+    background-color: var(--color-amarillo);
+}
+.header-container {
+    display: flex;
+    padding: 15px;
+}
+.logo {
+    width: 50%;
+    margin-right: 5px;
+}
+
+.container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.container input {
+    height: 70%;
+    border-radius: 3px;
+    border: 1px solid white;
+}
+.container .submit {
+    height:70%;
+    border: 1px solid white;
+    background-color: white;
+    border-top-right-radius:3px;
+}
+
+.submit i {
+    margin-top: 5px;
+    color: var(--gris-fuerte);
+}
+
+.cuotas-container {
+    padding: 5px;
+}
+
+.cuotas {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.nav-bar {
+    padding: 15px;
+
+}
+
+.nav-bar ul{
+    list-style: none;
+    font-family: var(--fuente);
+
+}
+
+.nav-bar-hija ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.boton-menu{
+    padding: 25px;
+}
+
+.burger-menu{
+    font-size: 25px;
+    text-align: center;
+}
+
+.margen-boton{
+    width: 46px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: var(--azul-celeste);
+    color: white;
+    margin:auto;
+}
+
+/* --------------------------------------   MAIN ---------------------------- */
+
+main {
+    background-color: var(--gris-claro);
+}
+
+.carrito i {
+
+    display: block;
+    font-size: 14px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;  
+    border: 1px solid var(--verde);
+    margin-left: 300px;
+    margin-bottom: -5px;
+    transform: rotateY(150px);
+}
+
+.contenido {
+    background-color: white;
+}
+
+.contenido .precio {
+    font-family: var(--fuente);
+    width: 30%;
+    font-size: var(--precios);
+}
+.contenido .descuentos {
+    font-family: var(--fuente);
+    width: 70%;
+    font-size: var(--descuentos);
+    color:var(--verde);
+}
+
+.footer-container{
+    text-align: center;
+    padding: 25px;
+    margin: 15px 15px;
+}
+.pago-tarjeta{
+    margin-bottom: 3%;
+}
+.pago-tarjeta i {
+    color: var(--azul-celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.envio-gratis {
+    margin-bottom: 15px;
+    margin-bottom: 3%;
+}
+.envio-gratis i {
+
+    color: var(--azul-celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.seguridad-principio {
+    margin-bottom: 15px;
+    margin-bottom: 3%;
+}
+
+.seguridad-principio i {
+    color: var(--azul-celeste);
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* --------------------------------------  Media querys -------------------------------------*/
+@media screen and (min-width:361px){
+    
+    main div h3 {
+        padding: 15px;
+        color: var(--gris-fuerte);
+        font-family: var(--fuente);
+        font-size: var(--titulares);
+    }
+    .carrito {
+        background-color: white;
+      
+    }
+    .carrito i {
+        color: var(--verde);
+        
+    }
+    .contenido {
+        background-color: white;
+    }
+    
+    .contenido .precio {
+        font-family: var(--fuente);
+        width: 30%;
+    }
+    .contenido .descuentos {
+        font-family: var(--fuente);
+        width: 70%;
+        font-size: var(--descuentos);
+        color:var(--verde);
+    }
+    .container-precio-descuento{
+        display: flex;
+        padding: 10px;
+    }
+  
+    .contenido .nombre-producto {
+        font-family: var(--fuente);
+        padding: 5px;
+    }
+   
+    .logo {
+        width: 50%;
+    }
+    .logo img {
+        width: 100%;
+    }
+    .nav-bar {
+        display: none;
+    }
+    
+    .cuotas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        font-family: var(--fuente);
+    }
+    .articulos {
+        width: 360px;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+
+    .container-nombre-producto p {
+        opacity: 100%;
+    
+    }
+ 
+}
+
+@media screen and (min-width:769px){
+    /* ------ Laptos / tablets ----- */
+
+        .boton-menu {
+            display: none;
+        }
+        .nav-bar  {
+            display: contents;
+        }
+        .nav-bar ul {
+            display: flex;
+            list-style: none;
+            font-family: var(--fuente); 
+        }
+        
+        .nav-bar-hija ul li a{
+            color: black;
+            text-decoration: none;
+            font-family: var(--fuente);
+        }
+        
+        .nav-bar-hija ul li{
+            margin: 8px;
+            justify-content: space-between;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }   
+        .logo {
+            width: 50%;
+        }
+        
+        .container {
+            justify-content: center;
+        }
+
+        .container input {
+            width: 80%;
+            height: 20%;
+            flex-wrap: nowrap;
+        }
+
+        .container .submit {
+            height: 20%;
+        }
+       
+        .primera-seccion {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 15px;
+        }
+
+        main div h3 {
+            padding: 15px;
+            color: var(--gris-fuerte);
+            font-family: var(--fuente);
+            font-size: var(--titulares);
+        }
+
+        main section .articulos:hover {
+            box-shadow: 0px 0px 10px rgb(100, 100, 100);
+            transition-duration: 0.7s;
+          
+        }
+
+        .container-nombre-producto p {
+            opacity: -50%;
+        }
+        
+        .container-nombre-producto p:hover{
+            padding: 10px;
+            opacity: 60%;
+            font-family: var(--fuente);
+        }
+
+
+        footer {
+            display: flex;
+        }
+}
+
